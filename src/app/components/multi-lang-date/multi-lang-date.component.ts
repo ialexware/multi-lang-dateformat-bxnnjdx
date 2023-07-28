@@ -13,6 +13,7 @@ import { Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, combineLatestWith } from 'rxjs/operators';
 import { DateAdapter } from '@angular/material/core';
+import { MatIconRegistry } from "@angular/material/icon";
 
 export enum Languages {
   en = 'en',
@@ -182,4 +183,6 @@ export class MultiLangDateComponent implements OnInit {
           })
           .join('');
   }
+
+
 }

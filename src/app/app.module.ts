@@ -5,13 +5,13 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 import { registerLocaleData } from '@angular/common';
@@ -67,7 +67,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-
+    HttpClientModule,
     /* Material imports*/
     MatFormFieldModule,
     MatInputModule,

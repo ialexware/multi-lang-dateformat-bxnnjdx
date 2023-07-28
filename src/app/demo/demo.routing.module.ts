@@ -6,6 +6,7 @@ const routes: Routes = [
     path: '',
     children: [
       { path: 'demo', component: DefaultComponent },
+      { path: '**', redirectTo: 'demo' }
     ]
   }
 ];
