@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -11,7 +12,7 @@ const routes: Routes = [
   {
     path: 'demo',
     loadChildren: () =>
-      import('./default/demo').then((m) => m.DemoModule),
+      import('./demo/demo.module').then((m) => m.DemoModule),
   },
 
 ];
