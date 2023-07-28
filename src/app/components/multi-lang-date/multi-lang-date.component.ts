@@ -166,7 +166,7 @@ export class MultiLangDateComponent implements OnInit {
      * @returns {string} Returns the date format according to the user configuration language
      */
      getDateFormat() {
-      const formatter = new Intl.DateTimeFormat(this.language).formatToParts();
+      const formatter = new Intl.DateTimeFormat(this.translateService.currentLang).formatToParts();
       return formatter
           .map((e) => {
               switch (e.type) {

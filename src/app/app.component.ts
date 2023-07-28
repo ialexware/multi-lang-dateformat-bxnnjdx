@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {MatIconRegistry} from '@angular/material';
 import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
@@ -8,7 +7,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class AppComponent  {
 
-constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+constructor(private matIconRegistry: any, private domSanitizer: DomSanitizer) {
     this.setFlagIcons();
   }
 
