@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+// import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -18,7 +19,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     CommonModule,
     MatRadioModule,
     MatIconModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    // TranslateModule
   ],
   exports: [
     MultiLangDateComponent

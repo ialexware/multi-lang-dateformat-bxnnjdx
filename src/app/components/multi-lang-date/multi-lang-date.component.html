@@ -13,11 +13,11 @@
       class="form-control"
       name="controlDatepicker"
       [matDatepicker]="picker"
+      [min]="minLocalDate"
+      [max]="maxLocalDate"
       [placeholder]="placeholder | async"
       >
       <!-- [id]="spDatepickerId"
-      [min]="minLocalDate"
-      [max]="maxLocalDate"
       (click)="click()"
       (dateChange)="spDateChange($event)"
       (input)="spInput($event)" -->
@@ -54,7 +54,7 @@
 </div>
 
 <div fxFlex="150px" >
-  <!-- <h3>{{'dateLabel' | translate}}</h3> -->
+  <!-- <h3>{{'dateLabel' | translate }}</h3> -->
   <p>{{selectedDate}}</p>
   <p>{{selectedDate | date: 'shortDate': '' : translateService.currentLang}} (with DatePipe)</p>
 </div>
